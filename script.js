@@ -21,5 +21,5 @@ else if(bmi >=30 && bmi <45){    
 else {   
     document.bmiCal.meaning.value = "Error";
 }
-
+return false;
 }
