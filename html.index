@@ -12,22 +12,19 @@
   </head>
   <body>
 <div class="container-fliud">
-  <div class="row mt-2">
-    <div class="col-sm">
-        <form>
-            <h4>BMI Calculator</h4>
-              <label for="Weight">Weight</label>
-              <input type="number" name="Weight" id="weightInput" aria-placeholder="Enter Weight in kg" required>
-            
-              <label for="Height">Height</label>
-            <input type="number" name="Height" id="heightInput" aria-placeholder="Enter Height in cm" required>
-            <button class = "submit"  value="Submit" onClick="bmi()">Submit</button>
-            <p id="result"></p>
-            <input type="reset" value="Reset" onClick="clearForm(this.form)">
-        </form>
-    </div>
-  </div>
-</div> 
+  <form name="bmiCal" method="POST">
+    <h4>BMI Calculator</h4><br>
+      <label for="weight">Weight:</label>
+      <input type="text" id="weight" name="weight" placeholder="Enter weight in kg" required>
+    
+      <label for="height">Height:</label>
+      <input type="text" id="height" name="height" placeholder="Enter height in cm" required><br><br>
+
+    <button type ="submit" value="Calculate BMI" onClick="calculateBmi()">Submit</button><br><br>
+    <label for="bmi">Result:</label>
+    <input type="text" name="bmi"><br><br>
+  <input type="reset" value="Reset" />
+</form>
 </div>
 <script src="script.js"></script>
  </body>
