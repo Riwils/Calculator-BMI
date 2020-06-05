@@ -11,39 +11,18 @@
     <title>Calculator</title>
   </head>
   <body class="bg-dark">
-<div class="container-fliud">
-  <div class="card m-2">
-    <div class="card-body">
-      <div class="form-group">
-        <form name="calc">
-          <input name="display" style="width:675px;height:100px;text-align:center"><br> 
-          
-            <input class="btn btn-info m-0.5" type="button" value="0" onclick="">
-            <input class="btn btn-info m-0.5" type="button" value="1" onclick="">
-            <input class="btn btn-info" type="button" value="2" onclick="">
-            <input class="btn btn-info" type="button" value="+"  onclick=""><br>
-            <input class="btn btn-info" type="button" value="3" onclick="">
-            <input class="btn btn-info" type="button" value="4" onclick="">
-            <input class="btn btn-info" type="button" value="5" onclick="">
-          <input class="btn btn-info" type="button" value="-" onclick=""><br>
-          <input class="btn btn-info" type="button" value="6" onclick="">
-          <input class="btn btn-info" type="button" value="7" onclick="">
-          <input class="btn btn-info" type="button" value="8" onclick="">
-          <input class="btn btn-info" type="button" value="x" onclick=""><br>
-          <input class="btn btn-info" type="button" value="9" onclick="">
-          <input class="btn btn-info" type="button" value="C" onclick=""
-          <input class="btn btn-info" type="button" value="=" onclick="">
-          <input class="btn btn-info" type="button" value="÷" onclick=""><br>
-        </form>
-      </div>
-    </div>
-</div>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">BMI Calculator</a>
+        <p>For use by adults over 20 years old</p>
+     </div> 
+<div class="container-fluid">
   <div class="card m-2">
     <div class="card-body bg-dark; text-white;">
       <form name="bmiCalc">
         <div class="form-group">
           <h4>BMI Calculator</h4><br>
-          <p>For use by adults over 20 years old</p>
+          <p></p>
             <div>
               <label for="weight">Weight:</label>
               <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter weight in kg" required>
@@ -61,10 +40,16 @@
        </div>
        </div>
      </form>
+    </div>
   </div>
+  <div class="card-footer text-muted">
+    <p>This tool should not be treated as a substitute from a health care professional. Always consult your doctor if you're concerned about your health.<p>
   </div>
-  
- 
+  <div>
+  <footer class="blog-footer">
+    <a href="#">Back to top</a>
+</footer>
+</div>
 <script src="script.js"></script>
  </body>
 </html>
