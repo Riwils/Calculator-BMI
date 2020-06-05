@@ -10,11 +10,37 @@
      <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Calculator</title>
   </head>
-  <body>
+  <body class="bg-dark">
 <div class="container-fliud">
   <div class="card m-2">
-    <div class="card-body bg-dark text-white">
-      <form name="bmiCal">
+    <div class="card-body">
+      <div class="form-group">
+        <form name="calc">
+          <input name="display" style="width:675px;height:100px;text-align:center"><br> 
+          
+            <input class="btn btn-info m-0.5" type="button" value="0" onclick="">
+            <input class="btn btn-info m-0.5" type="button" value="1" onclick="">
+            <input class="btn btn-info" type="button" value="2" onclick="">
+            <input class="btn btn-info" type="button" value="+"  onclick=""><br>
+            <input class="btn btn-info" type="button" value="3" onclick="">
+            <input class="btn btn-info" type="button" value="4" onclick="">
+            <input class="btn btn-info" type="button" value="5" onclick="">
+          <input class="btn btn-info" type="button" value="-" onclick=""><br>
+          <input class="btn btn-info" type="button" value="6" onclick="">
+          <input class="btn btn-info" type="button" value="7" onclick="">
+          <input class="btn btn-info" type="button" value="8" onclick="">
+          <input class="btn btn-info" type="button" value="x" onclick=""><br>
+          <input class="btn btn-info" type="button" value="9" onclick="">
+          <input class="btn btn-info" type="button" value="C" onclick=""
+          <input class="btn btn-info" type="button" value="=" onclick="">
+          <input class="btn btn-info" type="button" value="÷" onclick=""><br>
+        </form>
+      </div>
+    </div>
+</div>
+  <div class="card m-2">
+    <div class="card-body bg-dark; text-white;">
+      <form name="bmiCalc">
         <div class="form-group">
           <h4>BMI Calculator</h4><br>
           <p>For use by adults over 20 years old</p>
@@ -29,7 +55,7 @@
     <br><br>
             <div>
               <label for="bmi">Result:</label>
-              <input type="text" class="form-control" name="bmi" size="3"><br><input type="text" class="form-control" name="meaning">
+              <input type="text" class="form-control" name="bmi" maxlength="3"><br><input type="text" class="form-control" name="meaning">
             </div><br>
           <button class="btn btn-info btn-sm" type="reset" class="form-control" value="Reset">Reset</button>
        </div>
