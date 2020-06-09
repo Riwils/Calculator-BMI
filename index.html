@@ -11,44 +11,115 @@
     <title>Calculator</title>
   </head>
   <body class="bg-dark">
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand">BMI Calculator</a>
-        <p>For use by adults over 20 years old</p>
-     </div> 
+      <nav class="navbar bg-white">
+        <a class="navbar-brand align-centre">BMI Calculator</a>
+      </nav>
+    </div>
 <div class="container-fluid">
-  <div class="card m-2">
-    <div class="card-body bg-dark; text-white;">
-      <form name="bmiCalc">
-        <div class="form-group">
-          <h4>BMI Calculator</h4><br>
-          <p></p>
-            <div>
-              <label for="weight">Weight:</label>
-              <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter weight in kg" required>
-        
-              <label for="height">Height:</label>
-              <input type="text" class="form-control" id="height" name="height" placeholder="Enter height in cm" required>
-            </div><br>
-      <button class="btn btn-info btn-sm" type ="submit"  onClick="return calculateBmi()">Submit</button>
-    <br><br>
-            <div>
-              <label for="bmi">Result:</label>
-              <input type="text" class="form-control" name="bmi" maxlength="3"><br><input type="text" class="form-control" name="meaning">
-            </div><br>
-          <button class="btn btn-info btn-sm" type="reset" class="form-control" value="Reset">Reset</button>
-       </div>
-       </div>
-     </form>
+  <div class="row">
+    <div class="col">
+      <div class="card mt-4 mb-2">
+        <div class="card-body">
+          <form name="bmiCalc">
+            <div class="form-group">
+                <div>
+                  <label for="weight">Weight:</label>
+                  <input type="text" class="form-control" id="weight" name="weight" placeholder="Enter weight in kg" required>
+            
+                  <label for="height">Height:</label>
+                  <input type="text" class="form-control" id="height" name="height" placeholder="Enter height in cm" required>
+                </div><br>
+          <button class="btn btn-info btn-sm" type ="submit"  onClick="return calculateBmi()">Submit</button>
+        <br><br>
+                <div>
+                  <label for="bmi">Result:</label>
+                  <input type="text" class="form-control" name="bmi" maxlength="3"><br><input type="text" class="form-control" name="meaning">
+                </div><br>
+              <button class="btn btn-info btn-sm" type="reset" class="form-control" value="Reset">Reset</button>
+          </div> 
+          </form>
+          </div>
+        </div>
+      </div>
+<div class="col-sm-8">
+  <div class="card mt-4">
+    <div class="card-body">
+      <h5 class="card-title">Warning!</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Important information</h6>
+      <p>This BMI calculator is for use by <strong>adults over 20 years old</strong>.</p>
+      <p class="card-text">
+        BMI calculations cannot take into account:
+        <ul>
+          <li>Age</li>
+          <li>Sex</li>
+          <li>Muscle mass or Body fat</li>
+          <li>Pregnancy Status</li>
+       </ul>       
+      </p>
+       <p>Athletes or very muscular adults may be classed "overweight" or "obese" even though they have a lower level body fat.</p>
+       <p>Older people may have a low BMI but this may be due to having less muscle and more harmful body fat.</p>
+       <p>Pregnant women should use their pre-pregnancy weight when calculating their BMI.</p> 
     </div>
   </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card mt-4 mb-2">
+      <div class="card-body">
+        <p>Your BMI score will fall into one of the four categories below.</p>
+        <br>
+        <table class="table ">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">BMI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Underweight</th>
+              <td>Below 18.5</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Normal</th>
+              <td>18.5–24.9</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Overweight</th>
+              <td >25.0–29.9</td>
+            </tr>
+            <tr>
+              <th scope="row">Obesity</th>
+              <td >30.0 and Above</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p>The following links can provide more information on your calculation.</p>
+        <div class="text-center">
+        <a href="https://www.nhs.uk/live-well/healthy-weight/advice-for-underweight-adults/" class="card-link"><strong>Underweight</strong></a>
+        <a href="https://www.nhs.uk/live-well//" class="card-link"><strong>Healthy-weight</strong></a>
+        <a href="https://www.nhs.uk/conditions/obesity/" class="card-link"><strong>Overweight or Obese</strong></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
   <div class="card-footer text-muted">
-    <p>This tool should not be treated as a substitute from a health care professional. Always consult your doctor if you're concerned about your health.<p>
+    <p>This BMI calculator is in no way endorsed by, affiliated, associated, authorized by, the National Health Service (NHS) or the World Health Organisation (WHO), nor in any way officially connected with any of its subsidiaries or its affiliates.</p> 
+    <p>This tool should not be treated as a substitute from a health care professional. Always consult your doctor if you're concerned about your health.</p>
   </div>
   <div>
   <footer class="blog-footer">
     <a href="#">Back to top</a>
-</footer>
+  </footer>
+<br>
+</div>
 </div>
 <script src="script.js"></script>
  </body>
